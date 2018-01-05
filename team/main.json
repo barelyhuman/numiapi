@@ -1,0 +1,86 @@
+[
+    {
+        "name": "Ahmar Siddiqui",
+        "position": "Webdev, Sysadmin",
+        "avatar": "team/files/ahmar-siddiqui.jpg",
+        "description": "Ahmar kept the previous iterations of our website ticking over and handled maintainence of the Numix Store.",
+        "currentMember": false
+    },
+    {
+        "name": "Andreas Angerer",
+        "position": "Designer",
+        "avatar": "team/files/andreas-angerer.png",
+        "description": "Made brilliant and numerous contributions to our icon themes, especially our base theme which is the underpinning for all our app themes",
+        "currentMember": true
+    },
+    {
+        "name": "Bilal Elmoussaoui",
+        "position": "Developer",
+        "avatar": "team/files/bilal-elmoussaoui.jpg",
+        "description": "Develops Numix Folder, helps maintain Core, and the AUR packages. Also develops Hardcode Tray which makes it possible for us to theme more apps!",
+        "currentMember": true
+    },
+    {
+        "name": "Dustin Falgout",
+        "position": "Developer",
+        "avatar": "team/files/dustin-falgout.jpeg",
+        "description": "Helps develop the GTK theme, maintain the AUR packages, and to top it all off develops the Antergos Linux distro.",
+        "currentMember": true
+    },
+    {
+        "name": "Georgi Karavasilev",
+        "position": "Lead Designer",
+        "avatar": "team/files/georgi-karavasilev.jpg",
+        "description": "The artist behind the current designs of all our current icon themes, including Circle and Square.",
+        "currentMember": false
+    },
+    {
+        "name": "Joern Konopka",
+        "position": "Founder",
+        "avatar": "team/files/joern-konopka.jpg",
+        "description": "Created the original Numix icon theme and got the ball rolling with the wider projects.",
+        "currentMember": false
+    },
+    {
+        "name": "Josh Fogg",
+        "position": "Director, Designer, Developer",
+        "avatar": "team/files/josh-fogg.png",
+        "description": "Handles business enquiries and oversees maintainence of the icon themes. Occasional programmer.",
+        "currentMember": true
+    },
+    {
+        "name": "Khurshid Alam",
+        "position": "Developer, Packager",
+        "avatar": "team/files/khurshid-alam.png",
+        "description": "Oversees maintainance of the GTK theme and lends a hand with packaging",
+        "currentMember": true
+    },
+    {
+        "name": "Paolo Rotolo",
+        "position": "Developer",
+        "avatar": "team/files/paolo-rotolo.jpg",
+        "description": "Our resident Android guru and developer extrodinaire, Paolo has driven the development and maintainence of all our Android apps.",
+        "currentMember": true
+    },
+    {
+        "name": "Sascha Spreitzer",
+        "position": "Packager",
+        "avatar": "team/files/sascha-spreitzer.jpeg",
+        "description": "Builds and maintains the packages for Fedora, Redhat, and CentOS",
+        "currentMember": true
+    },
+    {
+        "name": "Satyajit Sahoo",
+        "position": "Designer",
+        "avatar": "team/files/satyajit-sahoo.jpg",
+        "description": "The brains behind our GTK themes. Satya helped shape these over the years and make them into the polished product they are today.",
+        "currentMember": true
+    },
+    {
+        "name": "Vincent Bermel",
+        "position": "Designer",
+        "avatar": "team/files/vincent-bermel.svg",
+        "description": "With over a 1000 commits to Core, Vincent is responsible for Circle and Square being the most complete themes out there.",
+        "currentMember": true
+    }
+]
