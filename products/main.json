@@ -1,27 +1,22 @@
 [
 	{
 		"name":"Numix Circle",
-		"image":"products/files/icon-circle.jpg",
+		"image":"products/files/icons-circle.jpg",
 		"type":"iconpack"
 	},
 	{
 		"name":"Numix Shine",
-		"image":"products/files/icon-shine.jpg",
+		"image":"products/files/icons-shine.jpg",
 		"type":"iconpack"
 	},
 	{
 		"name":"Numix Square",
-		"image":"products/files/icon-square.jpg",
+		"image":"products/files/icons-square.jpg",
 		"type":"iconpack"
 	},
 	{
 		"name":"Numix uTouch",
-		"image":"products/files/icon-utouch.jpg",
-		"type":"iconpack"
-	},
-	{
-		"name":"Numix uTouch",
-		"image":"products/files/icon-utouch.jpg",
+		"image":"products/files/icons-utouch.jpg",
 		"type":"iconpack"
 	},
 	{
