@@ -35,7 +35,7 @@ const main = () => {
       .then(res => {
         a.avatar = res.data.avatar_url;
         a.name = res.data.name;
-        a.url = res.data.url;
+        a.url = res.data.html_url;
         a.currentMember = false;
         a.position = "";
         a.description = "";
@@ -54,7 +54,7 @@ const main = () => {
       .then(res => {
         a.avatar = res.data.avatar_url;
         a.name = res.data.name;
-        a.url = res.data.url;
+        a.url = res.data.html_url;
         a.currentMember = true;
         a.position = "";
         a.description = "";
