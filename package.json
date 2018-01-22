@@ -1,0 +1,11 @@
+{
+  "name": "numiapi",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/ghostxen/numiapi",
+  "author": "Siddharth Gelera <sidgroks@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.17.1"
+  }
+}

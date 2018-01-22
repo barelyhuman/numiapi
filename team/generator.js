@@ -1,55 +1,72 @@
-const path = require('path');
-const fs = require('fs');
+const fs = require("fs");
+const path = require("path");
+const axios = require("axios");
+const api = "https://api.github.com/";
 
-const files = fs.readdirSync('files');
-const members = require('./main.json');
 let json = [];
 
+const usernames = require("./usernames.json");
 
+const fetchUser = username => {
+  return axios.get(api + "users/" + username);
+};
 
-function main(cb){
-	const membersMap ={};
+const addToJson = dataObject => {
+  const temp = [...json];
+  const uniquearray = temp.filter(a => a.url !== dataObject.url);
+  uniquearray.push(dataObject);
+  json = uniquearray;
+};
 
-	members.forEach(function(member){
-		let l = member.avatar.split('/');
-		let len = l.length;
-		membersMap[l[len-1]]=member;
-	})
+const writeToFile = () => {
+  fs.writeFile("main.json", JSON.stringify(json, null, 2), err => {
+    if (err) {
+      console.log(err);
+    }
+    console.log("Added to File");
+    return;
+  });
+};
 
-	membersMapKeys = Object.keys(membersMap);
+const main = () => {
+  usernames.alumini.forEach(user => {
+    const a = {};
+    fetchUser(user)
+      .then(res => {
+        a.avatar = res.data.avatar_url;
+        a.name = res.data.name;
+        a.url = res.data.url;
+        a.currentMember = false;
+        a.position = "";
+        a.description = "";
+        addToJson(a);
+        writeToFile();
+      })
+      .catch(err => {
+        if (err) {
+          console.error(err.response.data.message);
+        }
+      });
+  });
+  usernames.currentTeam.forEach(user => {
+    const a = {};
+    fetchUser(user)
+      .then(res => {
+        a.avatar = res.data.avatar_url;
+        a.name = res.data.name;
+        a.url = res.data.url;
+        a.currentMember = true;
+        a.position = "";
+        a.description = "";
+        addToJson(a);
+        writeToFile();
+      })
+      .catch(err => {
+        if (err) {
+          console.error(err.response.data.message);
+        }
+      });
+  });
+};
 
-	files.forEach(function(file){
-		if(file!=='profile.svg' && membersMapKeys.indexOf(file)===-1){
-			addToJson(file);
-		}
-	})
-
-	return cb([...members,...json]);
-}
-
-function addToJson(file){
-	let temp = JSON.parse(JSON.stringify(json));
-	temp.push({
-		name:getName(file),
-		position:"",
-		avatar:"team/files/"+file,
-		description:"",
-		currentMember:true	
-	});
-	json = temp;
-}
-
-function getName(str){
-	let name = str.replace(/\.\w+/,'').replace('-',' ').split(' ');
-	let fullName = name.map(function(word){
-		return word.charAt(0).toUpperCase()+word.slice(1);	
-	})
-	return fullName.join(' ');
-}
-
-main(function(data){
-	fs.writeFile('main.json',JSON.stringify(data,null,4),function(err){
-		err?console.log(err):null;
-		console.log("Done writing to file");
-	});
-})
+main();
