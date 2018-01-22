@@ -4,7 +4,7 @@
     "name": "Paolo Rotolo",
     "url": "https://api.github.com/users/paolorotolo",
     "currentMember": true,
-    "position": "",
+    "position": "Developer",
     "description": ""
   },
   {
@@ -12,7 +12,7 @@
     "name": "Georgi Karavasilev",
     "url": "https://api.github.com/users/me4oslav",
     "currentMember": false,
-    "position": "",
+    "position": "Lead Designer",
     "description": ""
   },
   {
@@ -20,7 +20,7 @@
     "name": "Andreas Angerer",
     "url": "https://api.github.com/users/wa4557",
     "currentMember": true,
-    "position": "",
+    "position": "Designer",
     "description": ""
   },
   {
@@ -28,7 +28,7 @@
     "name": "Joern Konopka",
     "url": "https://api.github.com/users/cldx",
     "currentMember": false,
-    "position": "",
+    "position": "Founder",
     "description": ""
   },
   {
@@ -36,7 +36,7 @@
     "name": "Bilal Elmoussaoui",
     "url": "https://api.github.com/users/bil-elmoussaoui",
     "currentMember": true,
-    "position": "",
+    "position": "Developer",
     "description": ""
   },
   {
@@ -44,7 +44,7 @@
     "name": "Joshua H. Fogg",
     "url": "https://api.github.com/users/Foggalong",
     "currentMember": true,
-    "position": "",
+    "position": "Director, Designer, Developer",
     "description": ""
   },
   {
@@ -52,7 +52,7 @@
     "name": "Khurshid Alam",
     "url": "https://api.github.com/users/khurshid-alam",
     "currentMember": true,
-    "position": "",
+    "position": "Developer, Packager",
     "description": ""
   },
   {
@@ -60,7 +60,7 @@
     "name": "Satyajit Sahoo",
     "url": "https://api.github.com/users/satya164",
     "currentMember": true,
-    "position": "",
+    "position": "Designer",
     "description": ""
   },
   {
@@ -68,7 +68,7 @@
     "name": "ahmar siddiqui",
     "url": "https://api.github.com/users/ahhmarr",
     "currentMember": false,
-    "position": "",
+    "position": "Webdev, Sysadmin",
     "description": ""
   },
   {
@@ -76,7 +76,7 @@
     "name": "Sascha Spreitzer",
     "url": "https://api.github.com/users/sspreitzer",
     "currentMember": true,
-    "position": "",
+    "position": "Packager",
     "description": ""
   },
   {
@@ -84,7 +84,7 @@
     "name": "Dustin Falgout",
     "url": "https://api.github.com/users/lots0logs",
     "currentMember": true,
-    "position": "",
+    "position": "Developer",
     "description": ""
   },
   {
@@ -92,7 +92,7 @@
     "name": "Vincent Bermel",
     "url": "https://api.github.com/users/palob",
     "currentMember": true,
-    "position": "",
+    "position": "Designer",
     "description": ""
   }
 ]
